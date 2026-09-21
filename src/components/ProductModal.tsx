@@ -168,6 +168,11 @@ export default function ProductModal({
     onClose();
   };
 
+  const handleInstantCheckout = () => {
+    if (!product) return;
+    window.location.href = `https://kjsy4w-34.myshopify.com/cart/${product.shopifyVariantId}:${quantity}?discount=BLUEPRINT15`;
+  };
+
   const discountPercent =
     product.compareAtPrice > product.price
       ? Math.round(
@@ -519,11 +524,12 @@ export default function ProductModal({
 
                 {/* Instant Checkout Option */}
                 <button
-                  onClick={handleQuickCheckout}
-                  className="w-full py-2.5 px-4 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-mono text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
+                  onClick={handleInstantCheckout}
+                  className="w-full py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-zinc-950 font-mono text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-md shadow-amber-500/20 cursor-pointer"
+                  title="Skip cart and proceed directly to Shopify checkout with 15% discount applied"
                 >
-                  <span>Quick Checkout</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-emerald-400" />
+                  <Zap className="w-4 h-4 fill-zinc-950" />
+                  <span>Instant Checkout • Save 15% (BLUEPRINT15)</span>
                 </button>
 
                 {/* OFFICIAL PAYMENT BADGES & BUYER PROTECTION MATRIX */}

@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import Image from "next/image";
-import { ShoppingBag, Star, Check, Eye, Search, X, SlidersHorizontal } from "lucide-react";
+import { ShoppingBag, Star, Check, Eye, Search, X, SlidersHorizontal, Zap } from "lucide-react";
 import { PRODUCTS, Product } from "@/data/products";
 import { useCart } from "@/context/CartContext";
 import { formatCurrency } from "@/lib/checkout";
@@ -25,6 +25,10 @@ export default function ProductGrid({ onSelectProduct }: ProductGridProps) {
     } else {
       setInternalModalProduct(product);
     }
+  };
+
+  const handleInstantCheckout = (product: Product) => {
+    window.location.href = `https://kjsy4w-34.myshopify.com/cart/${product.shopifyVariantId}:1?discount=BLUEPRINT15`;
   };
 
   const filteredProducts = useMemo(() => {
@@ -253,8 +257,8 @@ export default function ProductGrid({ onSelectProduct }: ProductGridProps) {
               </div>
 
               {/* Price & Action Footer */}
-              <div className="p-5 sm:p-6 pt-0 flex items-center justify-between gap-3">
-                <div>
+              <div className="p-5 sm:p-6 pt-0 flex flex-col gap-3">
+                <div className="flex items-center justify-between gap-3">
                   <div className="flex items-baseline gap-2">
                     <span className="text-lg font-bold font-mono text-white">
                       {formatCurrency(product.price)}
@@ -265,9 +269,7 @@ export default function ProductGrid({ onSelectProduct }: ProductGridProps) {
                       </span>
                     )}
                   </div>
-                </div>
 
-                <div className="flex items-center gap-2">
                   <button
                     onClick={() => handleOpenProduct(product)}
                     className="p-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300 hover:text-white transition-colors cursor-pointer"
@@ -276,13 +278,24 @@ export default function ProductGrid({ onSelectProduct }: ProductGridProps) {
                   >
                     <Eye className="w-4 h-4 text-zinc-400 hover:text-emerald-400" />
                   </button>
+                </div>
 
+                <div className="flex items-center gap-2">
                   <button
                     onClick={() => addToCart(product, 1)}
-                    className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-mono font-bold text-xs transition-all shadow-md shadow-emerald-500/20 cursor-pointer"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-mono font-bold text-xs transition-all shadow-md shadow-emerald-500/20 cursor-pointer whitespace-nowrap"
                   >
                     <ShoppingBag className="w-3.5 h-3.5" />
-                    <span>Add to Cart</span>
+                    <span>Add to Cockpit</span>
+                  </button>
+
+                  <button
+                    onClick={() => handleInstantCheckout(product)}
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 font-mono font-bold text-xs transition-all shadow-md shadow-amber-500/20 cursor-pointer whitespace-nowrap"
+                    title="Skip the cart and check out instantly with 15% off (BLUEPRINT15)"
+                  >
+                    <Zap className="w-3.5 h-3.5 fill-zinc-950" />
+                    <span>Instant Checkout</span>
                   </button>
                 </div>
               </div>

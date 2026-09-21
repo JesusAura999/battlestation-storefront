@@ -9,6 +9,7 @@ import NotionOsPreview from "@/components/NotionOsPreview";
 import BundleConfigurator from "@/components/BundleConfigurator";
 import ProductGrid from "@/components/ProductGrid";
 import CommunitySetups from "@/components/CommunitySetups";
+import CustomerTestimonials from "@/components/CustomerTestimonials";
 import FaqSection from "@/components/FaqSection";
 import LiveActivityTicker from "@/components/LiveActivityTicker";
 import ProductModal from "@/components/ProductModal";
@@ -63,7 +64,10 @@ export default function StorefrontClient() {
         {/* 6. Authentic Scraped Community Setups */}
         <CommunitySetups />
 
-        {/* 7. Interactive Technical FAQ & Verified Engineer Reviews */}
+        {/* 7. Verified Engineer Testimonials & Social Proof */}
+        <CustomerTestimonials />
+
+        {/* 8. Interactive Technical FAQ & Verified Engineer Reviews */}
         <FaqSection />
       </main>
 

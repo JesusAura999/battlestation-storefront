@@ -147,34 +147,63 @@ export default function CartDrawer() {
           {cart.length > 0 && (
             <div className="p-4 sm:p-6 border-t border-zinc-800 bg-zinc-900/90 space-y-4">
               
-              {/* 1-Click Order Bump */}
-              {!cart.some((l) => l.product.handle === "linux-docker-dev-cheat-sheet-bundle") && (
-                <div className="p-2.5 rounded-lg bg-emerald-950/20 border border-emerald-500/30 flex items-center justify-between gap-2.5">
-                  <div className="flex items-center gap-2 min-w-0">
-                    <span className="w-7 h-7 rounded bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-xs flex-shrink-0">
-                      ⚡
-                    </span>
-                    <div className="min-w-0">
-                      <p className="text-[11px] font-mono font-bold text-white truncate">
-                        Linux & Docker Cheat Sheet
-                      </p>
-                      <p className="text-[10px] font-mono text-emerald-400">
-                        Add to order • +$12.00 (Instant PDF)
-                      </p>
+              {/* Frequently Paired Upgrades Recommender */}
+              {(() => {
+                const upsellCandidates = [
+                  PRODUCTS.find((p) => p.id === "prod-10187462803699"), // Walnut Wrist Rest
+                  PRODUCTS.find((p) => p.id === "prod-10187462869235"), // Coiled Aviator Cable
+                  PRODUCTS.find((p) => p.id === "prod-9963791089907"),  // Magnetic Cable Clips
+                  PRODUCTS.find((p) => p.id === "prod-10187462967539"), // Swivel Headphone Hanger
+                  PRODUCTS.find((p) => p.handle === "linux-docker-dev-cheat-sheet-bundle")
+                ].filter((p): p is NonNullable<typeof p> => Boolean(p && !cart.some((item) => item.product.id === p.id)));
+
+                if (upsellCandidates.length === 0) return null;
+
+                const nextUpsell = upsellCandidates[0];
+
+                return (
+                  <div className="p-3 rounded-xl bg-zinc-950/80 border border-emerald-500/30 space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[11px] font-mono text-emerald-400 font-bold uppercase tracking-wider flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+                        Frequently Paired Upgrades
+                      </span>
+                      <span className="text-[10px] font-mono text-zinc-500">Popular Add-On</span>
+                    </div>
+
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="relative w-11 h-11 rounded-lg overflow-hidden border border-zinc-800 flex-shrink-0 bg-zinc-900">
+                        <Image
+                          src={nextUpsell.imageUrl}
+                          alt={nextUpsell.title}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <p className="text-xs font-mono font-bold text-white truncate">
+                          {nextUpsell.title}
+                        </p>
+                        <p className="text-[11px] font-mono text-emerald-400 font-semibold">
+                          +{formatCurrency(nextUpsell.price)}
+                          {nextUpsell.compareAtPrice > nextUpsell.price && (
+                            <span className="text-zinc-500 line-through ml-1.5 font-normal">
+                              {formatCurrency(nextUpsell.compareAtPrice)}
+                            </span>
+                          )}
+                        </p>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => addToCart(nextUpsell, 1)}
+                        className="px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-xs font-mono font-bold flex-shrink-0 cursor-pointer active:scale-95 transition-all shadow-sm shadow-emerald-500/20"
+                      >
+                        + Add
+                      </button>
                     </div>
                   </div>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      const cheat = PRODUCTS.find((p) => p.handle === "linux-docker-dev-cheat-sheet-bundle");
-                      if (cheat) addToCart(cheat);
-                    }}
-                    className="px-2.5 py-1 rounded bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-[10px] font-mono font-bold flex-shrink-0 cursor-pointer active:scale-95 transition-all"
-                  >
-                    + Add
-                  </button>
-                </div>
-              )}
+                );
+              })()}
 
               {/* Free Shipping Progress Bar */}
               <div className="space-y-2">
