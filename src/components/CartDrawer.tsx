@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { X, Trash2, Plus, Minus, ShieldCheck, ArrowRight, Sparkles, ShoppingBag } from "lucide-react";
+import { X, Trash2, Plus, Minus, ShieldCheck, ArrowRight, Sparkles, ShoppingBag, Truck } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { PRODUCTS } from "@/data/products";
-import { formatCurrency } from "@/lib/checkout";
+import { formatCurrency, FREE_SHIPPING_THRESHOLD } from "@/lib/checkout";
 
 export default function CartDrawer() {
   const {
@@ -27,6 +27,10 @@ export default function CartDrawer() {
 
   const [promoInput, setPromoInput] = useState("");
   const [promoError, setPromoError] = useState(false);
+
+  const freeShippingRemaining = Math.max(0, FREE_SHIPPING_THRESHOLD - subtotal);
+  const freeShippingProgress = Math.min(100, Math.round((subtotal / FREE_SHIPPING_THRESHOLD) * 100));
+  const hasFreeShipping = subtotal >= FREE_SHIPPING_THRESHOLD;
 
   if (!isCartOpen) return null;
 
@@ -171,6 +175,28 @@ export default function CartDrawer() {
                   </button>
                 </div>
               )}
+
+              {/* Free Shipping Progress Bar */}
+              <div className="space-y-2">
+                <div className="flex items-center gap-2">
+                  <Truck className="w-4 h-4 text-emerald-400" />
+                  {hasFreeShipping ? (
+                    <span className="text-emerald-400 font-mono text-xs font-semibold">
+                      FREE Expedited Shipping Unlocked!
+                    </span>
+                  ) : (
+                    <span className="text-zinc-300 font-mono text-xs">
+                      {'Add ' + formatCurrency(freeShippingRemaining) + ' for FREE Expedited Shipping'}
+                    </span>
+                  )}
+                </div>
+                <div className="h-2 bg-zinc-900 border border-zinc-800 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 transition-all duration-500"
+                    style={{ width: freeShippingProgress + '%' }}
+                  />
+                </div>
+              </div>
 
               {/* Promo Code Input */}
               <form onSubmit={handleApplyPromo} className="flex gap-2">

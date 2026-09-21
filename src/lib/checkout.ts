@@ -1,5 +1,6 @@
 export const SHOPIFY_STORE_DOMAIN = "kjsy4w-34.myshopify.com";
 export const DEFAULT_DISCOUNT_CODE = "SETUPWARS10";
+export const FREE_SHIPPING_THRESHOLD = 75;
 
 export interface CartItem {
   shopifyVariantId: string;
