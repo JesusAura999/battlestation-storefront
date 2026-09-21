@@ -76,69 +76,9 @@ export const PRODUCTS: Product[] = [
       "Digital Access": "Instant download + Notion template duplicate URL",
       "Fulfillment": "Physical Mat Shipped Worldwide + Digital Vault Instant Access"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1542751371-adc38448a05e_0df42b8e-70c3-4ca8-b1e8-b41c9538b008.jpg?v=1789946064",
+    "imageUrl": "/products/hex_mouse_grip_tape.jpg",
     "inStock": true,
     "requiresShipping": true
-  },
-  {
-    "id": "prod-9946349502707",
-    "shopifyVariantId": "50825400221939",
-    "title": "Linux & Docker Dev Cheat Sheet Bundle (High-Res Printable Reference Cards)",
-    "handle": "linux-docker-dev-cheat-sheet-bundle",
-    "category": "bundle",
-    "deliveryType": "digital",
-    "deliveryLabel": "⚡ 100% Digital Access",
-    "price": 12.0,
-    "compareAtPrice": 24.0,
-    "badge": "Most Popular • Save 46%",
-    "rating": 4.9,
-    "reviewsCount": 36,
-    "description": "Stop switching tabs to Google basic terminal commands.  Keep high-density, vector-rendered Linux and Docker reference sheets directly on your desk or secondary screen. \n        \n         Transform Your Terminal Speed: \n         \n             \n Instant Command Recall:  Color-coded syntax grouping network diagnostics, systemd services, and file permissions. \n             \n Zero Context-Switching:  Prune dangling volumes, inspect containers, and orchestrate Docker Compose stacks without breaking flow state. \n             \n Print-Ready 300 DPI:  Crisp vector typography designed for standard letter/A4 printing or tablet display. \n         \n\n         What's Inside: \n         \n             1x Master Linux Terminal Diagnostics &amp; Administration Sheet (PDF) \n             1x Docker Engine &amp; Compose Multi-Container Orchestration Sheet (PDF) \n             1x Git Advanced Rebase, Stash &amp; Conflict Resolution Matrix (PDF) \n         \n\n         Frequently Asked Questions: \n          Q: Are these printable?  \n        A: Yes, formatted at ultra-high resolution 300 DPI suitable for framing beside your battlestation.",
-    "features": [
-      "📦 Physical: 1x Extended 900x400mm Hydrophobic Desk Mat (Free Tracked Shipping)",
-      "⚡ Digital: Full Software Suite (Prompt Vault, Cheatsheets, 50+ 4K Wallpapers)",
-      "⚡ Instant download link & Notion duplicate URL sent automatically at checkout",
-      "⚡ Lifetime free updates to all digital tools & future cheat sheets"
-    ],
-    "specs": {
-      "Mat Dimensions": "900mm x 400mm x 4mm",
-      "Surface": "Ultra-dense micro-weave cloth with hydrophobic coating",
-      "Digital Access": "Instant download + Notion template duplicate URL",
-      "Fulfillment": "Physical Mat Shipped Worldwide + Digital Vault Instant Access"
-    },
-    "imageUrl": "/products/docker_cheatsheet_wallpaper_1789949120208.jpg",
-    "inStock": true,
-    "requiresShipping": false
-  },
-  {
-    "id": "prod-9946372178163",
-    "shopifyVariantId": "50825421979891",
-    "title": "4K & 8K Ultra-Wide Battlestation Wallpaper Pack (50+ Minimalist Renders)",
-    "handle": "4k-ultrawide-dynamic-wallpaper-bundle",
-    "category": "bundle",
-    "deliveryType": "digital",
-    "deliveryLabel": "⚡ 100% Digital Access",
-    "price": 9.0,
-    "compareAtPrice": 19.0,
-    "badge": "Most Popular • Save 46%",
-    "rating": 4.8,
-    "reviewsCount": 78,
-    "description": "Complete the visual look of your dual-monitor or ultrawide workstation.  50+ curated high-fidelity renders engineered for 21:9, 32:9, and standard 16:9 displays. \n        \n         Aesthetic Perfection: \n         \n             \n True Dark Mode:  Deep OLED blacks (HEX #0a0a0a) to minimize eye strain during late-night coding sessions. \n             \n Dual-Screen Seamless Alignment:  Renders specifically framed so focal points don't get cut off by screen bezels. \n             \n Uncompressed Lossless PNG:  Crisp detail without JPEG compression artifacts.",
-    "features": [
-      "📦 Physical: 1x Extended 900x400mm Hydrophobic Desk Mat (Free Tracked Shipping)",
-      "⚡ Digital: Full Software Suite (Prompt Vault, Cheatsheets, 50+ 4K Wallpapers)",
-      "⚡ Instant download link & Notion duplicate URL sent automatically at checkout",
-      "⚡ Lifetime free updates to all digital tools & future cheat sheets"
-    ],
-    "specs": {
-      "Mat Dimensions": "900mm x 400mm x 4mm",
-      "Surface": "Ultra-dense micro-weave cloth with hydrophobic coating",
-      "Digital Access": "Instant download + Notion template duplicate URL",
-      "Fulfillment": "Physical Mat Shipped Worldwide + Digital Vault Instant Access"
-    },
-    "imageUrl": "/products/docker_cheatsheet_wallpaper_1789949120208.jpg",
-    "inStock": true,
-    "requiresShipping": false
   },
   {
     "id": "prod-10187462770931",
@@ -166,7 +106,7 @@ export const PRODUCTS: Product[] = [
       "CRI": "Ra95 High Fidelity",
       "Clamp Compatibility": "5mm to 55mm thickness (Flat & 1000R-1800R Curved)"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1593062096033-9a26b09da705_5364d4d3-5773-4ee5-8116-33c09738022f.jpg?v=1790010244",
+    "imageUrl": "/products/monitor_screenbar_light.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -196,7 +136,7 @@ export const PRODUCTS: Product[] = [
       "Material": "Anodized Aluminum Alloy",
       "Dimensions": "145mm x 72mm x 16mm (Folded)"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1586105251261-72a756497a11.jpg?v=1790010569",
+    "imageUrl": "/products/magsafe_charging_stand.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -226,7 +166,7 @@ export const PRODUCTS: Product[] = [
       "Material": "Solid North American Black Walnut",
       "Finish": "Hand-buffed Natural Matte Wax"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1587829741301-dc798b83add3_3950a8ab-6131-407b-80f3-6b39e83315a3.jpg?v=1790010248",
+    "imageUrl": "/products/walnut_wrist_rest.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -256,7 +196,7 @@ export const PRODUCTS: Product[] = [
       "Connector": "4-Pin Detachable GX16 Aviator + Gold Plated Type-C",
       "Wiring": "24AWG Power + 28AWG Data (USB 2.0 High-Speed)"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1595225476474-87563907a212.jpg?v=1790010252",
+    "imageUrl": "/products/aviator_coiled_cable.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -286,7 +226,7 @@ export const PRODUCTS: Product[] = [
       "Base Dimensions": "100mm x 25mm x 12mm",
       "Adhesive": "Washable Reusable Micro-Suction Pad"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1544652478-6653e09f18a2.jpg?v=1788468518",
+    "imageUrl": "/products/magnetic_cable_clips.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -316,7 +256,7 @@ export const PRODUCTS: Product[] = [
       "Load Capacity": "Up to 5.0 kg (11 lbs)",
       "Material": "Anodized Aerospace 6061 Aluminum + Silicone"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1546435770-a3e426bf472b.jpg?v=1790010256",
+    "imageUrl": "/products/headphone_hanger.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -346,7 +286,7 @@ export const PRODUCTS: Product[] = [
       "Base": "Textured Anti-Slip Natural Rubber",
       "Fulfillment": "Physical Item Shipped (Free Global Tracked Delivery)"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1550745165-9bc0b252726f.jpg?v=1788378458",
+    "imageUrl": "/products/cyberpunk_synthwave_mat.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -376,7 +316,7 @@ export const PRODUCTS: Product[] = [
       "Base": "Textured Anti-Slip Natural Rubber",
       "Fulfillment": "Physical Item Shipped (Free Global Tracked Delivery)"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1616588589676-62b3bd4ff6d2_ba15e53d-2ffd-414d-afa8-fbcf8adfaa7e.jpg?v=1789946047",
+    "imageUrl": "/products/cyberpunk_synthwave_mat.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -436,7 +376,7 @@ export const PRODUCTS: Product[] = [
       "Base": "Textured Anti-Slip Natural Rubber",
       "Fulfillment": "Physical Item Shipped (Free Global Tracked Delivery)"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1527864550417-7fd91fc51a46_7603e9af-8d7b-485d-924d-5815bd5d33ac.jpg?v=1789946051",
+    "imageUrl": "/products/topographic_desk_mat_1789949088023.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -466,7 +406,7 @@ export const PRODUCTS: Product[] = [
       "Base": "Textured Anti-Slip Natural Rubber",
       "Fulfillment": "Physical Item Shipped (Free Global Tracked Delivery)"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/12260628928567766906_2048.jpg?v=1788389185",
+    "imageUrl": "/products/topographic_desk_mat_1789949088023.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -496,7 +436,7 @@ export const PRODUCTS: Product[] = [
       "Base": "Textured Anti-Slip Natural Rubber",
       "Fulfillment": "Physical Item Shipped (Free Global Tracked Delivery)"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1615663245857-ac93bb7c39e7.jpg?v=1788378463",
+    "imageUrl": "/products/hex_mouse_grip_tape.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -525,7 +465,7 @@ export const PRODUCTS: Product[] = [
       "Delivery": "📦 Physical Hardware • Free Tracked Worldwide Shipping",
       "Fulfillment": "Physical Item Shipped"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1527814050087-3793815479db_b261352a-2039-46bd-be1b-921f04ecb176.jpg?v=1789946057",
+    "imageUrl": "/products/ptfe_speed_skates.jpg",
     "inStock": true,
     "requiresShipping": true
   },
@@ -555,7 +495,7 @@ export const PRODUCTS: Product[] = [
       "Delivery": "Instant GitHub Private Repository Access + ZIP Download",
       "Fulfillment": "100% Digital Asset (No Physical Shipping)"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1555066931-4365d14bab8c_2bfe5ece-4445-497a-85c7-26910e4c3dcd.jpg?v=1790010260",
+    "imageUrl": "/products/nextjs_saas_boilerplate.jpg",
     "inStock": true,
     "requiresShipping": false
   },
@@ -643,7 +583,7 @@ export const PRODUCTS: Product[] = [
       "Delivery": "Instant Download Link + Cloud Folder Access",
       "Fulfillment": "100% Digital Asset (No Physical Shipping)"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1518770660439-4636190af475_e14af366-fd04-4c8a-83b8-4a4b2710dca9.jpg?v=1789946040",
+    "imageUrl": "/products/make_automation_blueprints.jpg",
     "inStock": true,
     "requiresShipping": false
   },
@@ -673,7 +613,7 @@ export const PRODUCTS: Product[] = [
       "Delivery": "Instant Download Link + Cloud Folder Access",
       "Fulfillment": "100% Digital Asset (No Physical Shipping)"
     },
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1558494949-ef010cbdcc31.jpg?v=1790010263",
+    "imageUrl": "/products/system_design_deck.jpg",
     "inStock": true,
     "requiresShipping": false
   },
@@ -703,6 +643,66 @@ export const PRODUCTS: Product[] = [
       "Fulfillment": "Instant Digital Delivery"
     },
     "imageUrl": "https://cdn.shopify.com/s/files/1/0852/0053/5795/files/photo-1542751110-97427bbecf20.jpg?v=1788378466",
+    "inStock": true,
+    "requiresShipping": false
+  },
+  {
+    "id": "prod-9946349502707",
+    "shopifyVariantId": "50825400221939",
+    "title": "Linux & Docker Dev Cheat Sheet Bundle (High-Res Printable Reference Cards)",
+    "handle": "linux-docker-dev-cheat-sheet-bundle",
+    "category": "digital",
+    "deliveryType": "digital",
+    "deliveryLabel": "100% Digital Download - Instant Delivery at Checkout",
+    "price": 12.0,
+    "compareAtPrice": 24.0,
+    "badge": "Desk Reference",
+    "rating": 4.9,
+    "reviewsCount": 36,
+    "description": "Stop switching tabs to Google basic terminal commands.  Keep high-density, vector-rendered Linux and Docker reference sheets directly on your desk or secondary screen. \n        \n         Transform Your Terminal Speed: \n         \n             \n Instant Command Recall:  Color-coded syntax grouping network diagnostics, systemd services, and file permissions. \n             \n Zero Context-Switching:  Prune dangling volumes, inspect containers, and orchestrate Docker Compose stacks without breaking flow state. \n             \n Print-Ready 300 DPI:  Crisp vector typography designed for standard letter/A4 printing or tablet display. \n         \n\n         What's Inside: \n         \n             1x Master Linux Terminal Diagnostics &amp; Administration Sheet (PDF) \n             1x Docker Engine &amp; Compose Multi-Container Orchestration Sheet (PDF) \n             1x Git Advanced Rebase, Stash &amp; Conflict Resolution Matrix (PDF) \n         \n\n         Frequently Asked Questions: \n          Q: Are these printable?  \n        A: Yes, formatted at ultra-high resolution 300 DPI suitable for framing beside your battlestation.",
+    "features": [
+      "📦 Physical: 1x Extended 900x400mm Hydrophobic Desk Mat (Free Tracked Shipping)",
+      "⚡ Digital: Full Software Suite (Prompt Vault, Cheatsheets, 50+ 4K Wallpapers)",
+      "⚡ Instant download link & Notion duplicate URL sent automatically at checkout",
+      "⚡ Lifetime free updates to all digital tools & future cheat sheets"
+    ],
+    "specs": {
+      "Mat Dimensions": "900mm x 400mm x 4mm",
+      "Surface": "Ultra-dense micro-weave cloth with hydrophobic coating",
+      "Digital Access": "Instant download + Notion template duplicate URL",
+      "Fulfillment": "Physical Mat Shipped Worldwide + Digital Vault Instant Access"
+    },
+    "imageUrl": "/products/docker_cheatsheet_wallpaper_1789949120208.jpg",
+    "inStock": true,
+    "requiresShipping": false
+  },
+  {
+    "id": "prod-9946372178163",
+    "shopifyVariantId": "50825421979891",
+    "title": "4K & 8K Ultra-Wide Battlestation Wallpaper Pack (50+ Minimalist Renders)",
+    "handle": "4k-ultrawide-dynamic-wallpaper-bundle",
+    "category": "digital",
+    "deliveryType": "digital",
+    "deliveryLabel": "100% Digital Download - Instant Delivery at Checkout",
+    "price": 9.0,
+    "compareAtPrice": 19.0,
+    "badge": "50+ 4K/8K Wallpapers",
+    "rating": 4.8,
+    "reviewsCount": 78,
+    "description": "Complete the visual look of your dual-monitor or ultrawide workstation.  50+ curated high-fidelity renders engineered for 21:9, 32:9, and standard 16:9 displays. \n        \n         Aesthetic Perfection: \n         \n             \n True Dark Mode:  Deep OLED blacks (HEX #0a0a0a) to minimize eye strain during late-night coding sessions. \n             \n Dual-Screen Seamless Alignment:  Renders specifically framed so focal points don't get cut off by screen bezels. \n             \n Uncompressed Lossless PNG:  Crisp detail without JPEG compression artifacts.",
+    "features": [
+      "📦 Physical: 1x Extended 900x400mm Hydrophobic Desk Mat (Free Tracked Shipping)",
+      "⚡ Digital: Full Software Suite (Prompt Vault, Cheatsheets, 50+ 4K Wallpapers)",
+      "⚡ Instant download link & Notion duplicate URL sent automatically at checkout",
+      "⚡ Lifetime free updates to all digital tools & future cheat sheets"
+    ],
+    "specs": {
+      "Mat Dimensions": "900mm x 400mm x 4mm",
+      "Surface": "Ultra-dense micro-weave cloth with hydrophobic coating",
+      "Digital Access": "Instant download + Notion template duplicate URL",
+      "Fulfillment": "Physical Mat Shipped Worldwide + Digital Vault Instant Access"
+    },
+    "imageUrl": "/products/docker_cheatsheet_wallpaper_1789949120208.jpg",
     "inStock": true,
     "requiresShipping": false
   }
