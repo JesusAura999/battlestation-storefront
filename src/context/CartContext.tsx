@@ -109,6 +109,11 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       setAppliedDiscount(0.1);
       return true;
     }
+    if (clean === "BLUEPRINT15" || clean === "COCKPIT15") {
+      setDiscountCode(clean);
+      setAppliedDiscount(0.15);
+      return true;
+    }
     if (clean === "VIP20") {
       setDiscountCode(clean);
       setAppliedDiscount(0.2);

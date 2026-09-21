@@ -15,6 +15,7 @@ import ProductModal from "@/components/ProductModal";
 import CartDrawer from "@/components/CartDrawer";
 import TerminalWidget from "@/components/TerminalWidget";
 import MobileQuickBuyBar from "@/components/MobileQuickBuyBar";
+import LeadMagnetModal from "@/components/LeadMagnetModal";
 import Footer from "@/components/Footer";
 import { Product } from "@/data/products";
 
@@ -87,6 +88,9 @@ export default function StorefrontClient() {
 
       {/* Flyout Cart Drawer */}
       <CartDrawer />
+
+      {/* Developer Architecture Blueprint Exit-Intent / Scroll Modal */}
+      <LeadMagnetModal />
 
       {/* Footer */}
       <Footer />
