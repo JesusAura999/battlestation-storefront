@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import Image from "next/image";
-import { ShoppingBag, Star, Check, Eye } from "lucide-react";
+import { ShoppingBag, Star, Check, Eye, Search, X, SlidersHorizontal } from "lucide-react";
 import { PRODUCTS, Product } from "@/data/products";
 import { useCart } from "@/context/CartContext";
 import { formatCurrency } from "@/lib/checkout";
@@ -14,7 +14,9 @@ interface ProductGridProps {
 
 export default function ProductGrid({ onSelectProduct }: ProductGridProps) {
   const { addToCart } = useCart();
-  const [filter, setFilter] = useState<"all" | "bundle" | "physical" | "digital">("all");
+  const [filter, setFilter] = useState<"all" | "bundle" | "hardware" | "physical" | "digital">("all");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState<"featured" | "price-asc" | "price-desc" | "rating">("featured");
   const [internalModalProduct, setInternalModalProduct] = useState<Product | null>(null);
 
   const handleOpenProduct = (product: Product) => {
@@ -25,54 +27,148 @@ export default function ProductGrid({ onSelectProduct }: ProductGridProps) {
     }
   };
 
-  const filteredProducts = PRODUCTS.filter((p) => {
-    if (filter === "all") return true;
-    if (filter === "bundle") return p.category === "bundle";
-    if (filter === "physical") return p.category === "physical" || p.category === "hardware";
-    if (filter === "digital") return p.category === "digital";
-    return true;
-  });
+  const filteredProducts = useMemo(() => {
+    let list = PRODUCTS.filter((p) => {
+      // Category filter
+      if (filter === "bundle" && p.category !== "bundle") return false;
+      if (filter === "hardware" && p.category !== "hardware") return false;
+      if (filter === "physical" && p.category !== "physical") return false;
+      if (filter === "digital" && p.category !== "digital") return false;
+
+      // Search query filter
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase().trim();
+        const inTitle = p.title.toLowerCase().includes(q);
+        const inDesc = p.description.toLowerCase().includes(q);
+        const inFeatures = p.features.some((f) => f.toLowerCase().includes(q));
+        const inBadge = p.badge?.toLowerCase().includes(q);
+        if (!inTitle && !inDesc && !inFeatures && !inBadge) return false;
+      }
+      return true;
+    });
+
+    // Sorting
+    if (sortBy === "price-asc") {
+      list = [...list].sort((a, b) => a.price - b.price);
+    } else if (sortBy === "price-desc") {
+      list = [...list].sort((a, b) => b.price - a.price);
+    } else if (sortBy === "rating") {
+      list = [...list].sort((a, b) => b.rating - a.rating || b.reviewsCount - a.reviewsCount);
+    }
+
+    return list;
+  }, [filter, searchQuery, sortBy]);
 
   return (
     <section id="products" className="py-20 lg:py-28 bg-zinc-950 border-b border-zinc-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
           <div>
             <span className="text-xs font-mono text-emerald-400 uppercase tracking-wider block mb-1">
-              [CURATED HARDWARE & WORKFLOW ASSETS]
+              [CURATED HARDWARE & WORKFLOW ASSETS • {PRODUCTS.length} PRODUCTS LIVE]
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Individual Cockpit Upgrades
+              Workstation & Dev Upgrades
             </h2>
             <p className="mt-2 text-sm text-zinc-400 max-w-xl">
-              Precision desk mats, digital engineering templates, and 4K wallpapers designed to integrate seamlessly into your setup.
+              Precision desk mats, anodized hardware, full-stack micro-SaaS boilerplates, and developer OS systems designed for peak flow state.
             </p>
           </div>
 
-          {/* Filter Pills */}
+          {/* Search & Sort Controls */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            {/* Search Input */}
+            <div className="relative min-w-[240px]">
+              <Search className="w-4 h-4 text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search gear or software..."
+                className="w-full pl-9 pr-8 py-2 rounded-lg bg-zinc-900/80 border border-zinc-800 text-xs font-mono text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-500 transition-colors"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-white"
+                  title="Clear search"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
+
+            {/* Sort Select */}
+            <div className="relative flex items-center">
+              <SlidersHorizontal className="w-3.5 h-3.5 text-zinc-500 absolute left-3 pointer-events-none" />
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
+                className="w-full sm:w-auto appearance-none pl-8 pr-8 py-2 rounded-lg bg-zinc-900/80 border border-zinc-800 text-xs font-mono text-zinc-300 hover:text-white focus:outline-none focus:border-emerald-500 transition-colors cursor-pointer"
+              >
+                <option value="featured">Sort: Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating">Top Customer Rated</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        {/* Filter Pills & Counter */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10 pb-4 border-b border-zinc-900">
           <div className="flex flex-wrap gap-2">
             {[
-              { id: "all", label: "All Products" },
+              { id: "all", label: `All Upgrades (${PRODUCTS.length})` },
               { id: "bundle", label: "Bundles" },
-              { id: "physical", label: "Desk Mats & Gear" },
-              { id: "digital", label: "Digital Workflow OS" }
+              { id: "hardware", label: "Hardware & Accessories" },
+              { id: "physical", label: "Desk Mats & Surfaces" },
+              { id: "digital", label: "Developer OS & Code" }
             ].map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setFilter(tab.id as typeof filter)}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-mono transition-all cursor-pointer ${
                   filter === tab.id
-                    ? "bg-zinc-800 text-emerald-400 border border-emerald-500/40 font-semibold"
-                    : "bg-zinc-900/60 text-zinc-400 border border-zinc-800 hover:text-white"
+                    ? "bg-zinc-800 text-emerald-400 border border-emerald-500/40 font-semibold shadow-sm"
+                    : "bg-zinc-900/60 text-zinc-400 border border-zinc-800 hover:text-white hover:border-zinc-700"
                 }`}
               >
                 {tab.label}
               </button>
             ))}
           </div>
+
+          <div className="text-xs font-mono text-zinc-500">
+            Showing <span className="text-emerald-400 font-semibold">{filteredProducts.length}</span> of {PRODUCTS.length} upgrades
+          </div>
         </div>
+
+        {/* Empty State */}
+        {filteredProducts.length === 0 && (
+          <div className="text-center py-20 px-4 rounded-2xl border border-dashed border-zinc-800 bg-zinc-900/30">
+            <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-500">
+              <Search className="w-6 h-6" />
+            </div>
+            <h3 className="text-base font-mono font-bold text-white mb-1">
+              &gt;_ NO MATCHING WORKSPACE ASSETS FOUND
+            </h3>
+            <p className="text-xs font-mono text-zinc-400 max-w-sm mx-auto mb-5">
+              No products matched your search for &quot;{searchQuery}&quot; in this category.
+            </p>
+            <button
+              onClick={() => {
+                setFilter("all");
+                setSearchQuery("");
+              }}
+              className="px-4 py-2 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-emerald-400 text-xs font-mono font-semibold transition-colors cursor-pointer"
+            >
+              Reset All Filters
+            </button>
+          </div>
+        )}
 
         {/* Product Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

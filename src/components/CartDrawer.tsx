@@ -144,7 +144,7 @@ export default function CartDrawer() {
             <div className="p-4 sm:p-6 border-t border-zinc-800 bg-zinc-900/90 space-y-4">
               
               {/* 1-Click Order Bump */}
-              {!cart.some((l) => l.product.id === "prod-cheat-sheets") && (
+              {!cart.some((l) => l.product.handle === "linux-docker-dev-cheat-sheet-bundle") && (
                 <div className="p-2.5 rounded-lg bg-emerald-950/20 border border-emerald-500/30 flex items-center justify-between gap-2.5">
                   <div className="flex items-center gap-2 min-w-0">
                     <span className="w-7 h-7 rounded bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-xs flex-shrink-0">
@@ -162,7 +162,7 @@ export default function CartDrawer() {
                   <button
                     type="button"
                     onClick={() => {
-                      const cheat = PRODUCTS.find((p) => p.id === "prod-cheat-sheets");
+                      const cheat = PRODUCTS.find((p) => p.handle === "linux-docker-dev-cheat-sheet-bundle");
                       if (cheat) addToCart(cheat);
                     }}
                     className="px-2.5 py-1 rounded bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-[10px] font-mono font-bold flex-shrink-0 cursor-pointer active:scale-95 transition-all"

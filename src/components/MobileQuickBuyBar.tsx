@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import { Sparkles, ArrowRight, ShieldCheck } from "lucide-react";
@@ -8,7 +8,7 @@ import { buildCheckoutUrl, formatCurrency } from "@/lib/checkout";
 
 export default function MobileQuickBuyBar() {
   const { addToCart, setIsCartOpen, discountCode } = useCart();
-  const bundleProduct = PRODUCTS.find((p) => p.id === "prod-bundle-cockpit") || PRODUCTS[0];
+  const bundleProduct = PRODUCTS.find((p) => p.handle === "the-developer-cockpit-starter-bundle") || PRODUCTS[0];
 
   // Calculated bundle price with 10% discount
   const discountedPrice = bundleProduct.price * 0.9;
