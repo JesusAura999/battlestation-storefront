@@ -707,8 +707,8 @@ export const PRODUCTS: Product[] = [
     "requiresShipping": false
   },
   {
-    "id": "prod-10187517133043",
-    "shopifyVariantId": "51565860716787",
+    "id": "prod-10187504287987",
+    "shopifyVariantId": "51565852066035",
     "title": "CNC Aluminum Switch Opener & Acrylic Lube Station Deck",
     "handle": "cnc-aluminum-switch-opener-acrylic-lube-station-deck",
     "category": "hardware",
@@ -737,8 +737,8 @@ export const PRODUCTS: Product[] = [
     "requiresShipping": true
   },
   {
-    "id": "prod-10187517165811",
-    "shopifyVariantId": "51565860749555",
+    "id": "prod-10187504320755",
+    "shopifyVariantId": "51565852098803",
     "title": "Under-Desk No-Drill Steel Cable Management Spine Raceway",
     "handle": "under-desk-no-drill-steel-cable-management-spine-raceway",
     "category": "hardware",
@@ -767,8 +767,8 @@ export const PRODUCTS: Product[] = [
     "requiresShipping": true
   },
   {
-    "id": "prod-10187517198579",
-    "shopifyVariantId": "51565860782323",
+    "id": "prod-10187504353523",
+    "shopifyVariantId": "51565852131571",
     "title": "Sound-Reactive Dual RGB Ambient Smart Lightbar Towers",
     "handle": "sound-reactive-dual-rgb-ambient-smart-lightbar-towers",
     "category": "hardware",
@@ -797,8 +797,8 @@ export const PRODUCTS: Product[] = [
     "requiresShipping": true
   },
   {
-    "id": "prod-10187517231347",
-    "shopifyVariantId": "51565860815091",
+    "id": "prod-10187504386291",
+    "shopifyVariantId": "51565852197107",
     "title": "Ergonomic Memory Foam Lumbar Support with Cooling Gel Layer",
     "handle": "ergonomic-memory-foam-lumbar-support-with-cooling-gel-layer",
     "category": "physical",
@@ -827,8 +827,8 @@ export const PRODUCTS: Product[] = [
     "requiresShipping": true
   },
   {
-    "id": "prod-10187517264115",
-    "shopifyVariantId": "51565860847859",
+    "id": "prod-10187504451827",
+    "shopifyVariantId": "51565852262643",
     "title": "Precision Screen & Optical Sensor Micro-Mist Cleaner Kit",
     "handle": "precision-screen-optical-sensor-micro-mist-cleaner-kit",
     "category": "physical",
