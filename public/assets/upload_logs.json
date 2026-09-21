@@ -1,0 +1,218 @@
+[
+  {
+    "timestamp": "2026-09-20T23:36:01.992244+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-20T23:36:10.277405+00:00",
+    "target_day": "Sunday",
+    "video_file": "DA-01_desk_mat_anchor_vertical_short.mp4",
+    "hook_title": "Stop buying cheap mousepads that peel after 2 weeks.",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram"
+    ],
+    "status": "QUEUED_FOR_DISPATCH"
+  },
+  {
+    "timestamp": "2026-09-20T23:36:27.127745+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-20T23:38:26.063342+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-20T23:38:26.066797+00:00",
+    "target_day": "Sunday",
+    "video_file": "DA-01_desk_mat_anchor_vertical_short.mp4",
+    "hook_title": "Stop buying cheap mousepads that peel after 2 weeks.",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram"
+    ],
+    "status": "QUEUED_FOR_DISPATCH"
+  },
+  {
+    "timestamp": "2026-09-20T23:38:37.157374+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-20T23:38:37.159553+00:00",
+    "target_day": "Sunday",
+    "video_file": "DA-01_desk_mat_anchor_vertical_short.mp4",
+    "hook_title": "Stop buying cheap mousepads that peel after 2 weeks.",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram"
+    ],
+    "status": "QUEUED_FOR_DISPATCH"
+  },
+  {
+    "timestamp": "2026-09-20T23:38:56.657863+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-20T23:38:56.661293+00:00",
+    "target_day": "Sunday",
+    "video_file": "DA-01_desk_mat_anchor_vertical_short.mp4",
+    "hook_title": "Stop buying cheap mousepads that peel after 2 weeks.",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram"
+    ],
+    "status": "QUEUED_FOR_DISPATCH"
+  },
+  {
+    "timestamp": "2026-09-20T23:39:14.393291+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-20T23:39:14.396412+00:00",
+    "target_day": "Sunday",
+    "video_file": "DA-01_desk_mat_anchor_vertical_short.mp4",
+    "hook_title": "Stop buying cheap mousepads that peel after 2 weeks.",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram"
+    ],
+    "status": "QUEUED_FOR_DISPATCH"
+  },
+  {
+    "timestamp": "2026-09-21T00:02:07.605634+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-21T00:02:07.608969+00:00",
+    "target_day": "Sunday",
+    "video_file": "DA-01_desk_mat_anchor_vertical_short.mp4",
+    "hook_title": "Stop buying cheap mousepads that peel after 2 weeks.",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram"
+    ],
+    "status": "QUEUED_FOR_DISPATCH"
+  },
+  {
+    "timestamp": "2026-09-21T00:08:06.992731+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-21T00:08:06.995614+00:00",
+    "target_day": "Sunday",
+    "video_file": "DA-01_desk_mat_anchor_vertical_short.mp4",
+    "hook_title": "Stop buying cheap mousepads that peel after 2 weeks.",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram"
+    ],
+    "status": "QUEUED_FOR_DISPATCH"
+  },
+  {
+    "timestamp": "2026-09-21T00:18:36.244967+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-21T00:18:36.246669+00:00",
+    "target_day": "Sunday",
+    "video_file": "DA-01_desk_mat_anchor_vertical_short.mp4",
+    "hook_title": "Stop buying cheap mousepads that peel after 2 weeks.",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram"
+    ],
+    "status": "QUEUED_FOR_DISPATCH"
+  },
+  {
+    "timestamp": "2026-09-21T00:19:11.456424+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "platform": "tiktok",
+    "status": "ERROR",
+    "error": "Page.wait_for_selector: Timeout 20000ms exceeded.\nCall log:\n  - waiting for locator(\"input[type='file']\") to be visible\n",
+    "file": "v2_Developer_Cockpit_Showcase.mp4"
+  },
+  {
+    "timestamp": "2026-09-21T00:20:24.263588+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-21T00:20:24.266942+00:00",
+    "target_day": "Sunday",
+    "video_file": "DA-01_desk_mat_anchor_vertical_short.mp4",
+    "hook_title": "Stop buying cheap mousepads that peel after 2 weeks.",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram"
+    ],
+    "status": "QUEUED_FOR_DISPATCH"
+  },
+  {
+    "timestamp": "2026-09-21T00:52:38.063695+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-21T00:52:38.066452+00:00",
+    "target_day": "Sunday",
+    "video_file": "DA-01_desk_mat_anchor_vertical_short.mp4",
+    "hook_title": "Stop buying cheap mousepads that peel after 2 weeks.",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram"
+    ],
+    "status": "QUEUED_FOR_DISPATCH"
+  },
+  {
+    "timestamp": "2026-09-21T01:29:59.668543+00:00",
+    "action": "DRY_RUN",
+    "videos_validated": 4,
+    "all_passed": true
+  },
+  {
+    "timestamp": "2026-09-21T01:29:59.671691+00:00",
+    "target_day": "Sunday",
+    "video_file": "DA-01_desk_mat_anchor_vertical_short.mp4",
+    "hook_title": "Stop buying cheap mousepads that peel after 2 weeks.",
+    "platforms": [
+      "youtube",
+      "tiktok",
+      "instagram"
+    ],
+    "status": "QUEUED_FOR_DISPATCH"
+  }
+]

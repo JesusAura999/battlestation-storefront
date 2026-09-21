@@ -1,0 +1,5 @@
+file 'C:/Users/Default User.DESKTOP-A0SAJL1/OneDrive/Desktop/ShopifyStartup/antigravity-opencode-nexus/artifacts/marketing_assets/temp_render/scene1_hook_clip.mp4'
+file 'C:/Users/Default User.DESKTOP-A0SAJL1/OneDrive/Desktop/ShopifyStartup/antigravity-opencode-nexus/artifacts/marketing_assets/temp_render/scene2_desk_mat_clip.mp4'
+file 'C:/Users/Default User.DESKTOP-A0SAJL1/OneDrive/Desktop/ShopifyStartup/antigravity-opencode-nexus/artifacts/marketing_assets/temp_render/scene3_notion_os_clip.mp4'
+file 'C:/Users/Default User.DESKTOP-A0SAJL1/OneDrive/Desktop/ShopifyStartup/antigravity-opencode-nexus/artifacts/marketing_assets/temp_render/scene4_wallpapers_clip.mp4'
+file 'C:/Users/Default User.DESKTOP-A0SAJL1/OneDrive/Desktop/ShopifyStartup/antigravity-opencode-nexus/artifacts/marketing_assets/temp_render/scene5_cta_clip.mp4'

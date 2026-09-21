@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-09-21T00:55:10Z",
+  "profile_dir": "C:\\Users\\Default User.DESKTOP-A0SAJL1\\OneDrive\\Desktop\\ShopifyStartup\\antigravity-opencode-nexus\\.agent\\browser_profiles\\social_uploader",
+  "platforms": {
+    "youtube": {
+      "logged_in": false,
+      "reason": "Redirected to Google Sign-In"
+    },
+    "tiktok": {
+      "logged_in": false,
+      "reason": "Upload container and profile avatar not detected"
+    },
+    "instagram": {
+      "logged_in": false,
+      "reason": "Feed navigation markers not detected"
+    }
+  }
+}
