@@ -705,5 +705,155 @@ export const PRODUCTS: Product[] = [
     "imageUrl": "/products/docker_cheatsheet_wallpaper_1789949120208.jpg",
     "inStock": true,
     "requiresShipping": false
+  },
+  {
+    "id": "prod-10187517133043",
+    "shopifyVariantId": "51565860716787",
+    "title": "CNC Aluminum Switch Opener & Acrylic Lube Station Deck",
+    "handle": "cnc-aluminum-switch-opener-acrylic-lube-station-deck",
+    "category": "hardware",
+    "deliveryType": "physical",
+    "deliveryLabel": "📦 Physical Hardware • Free Tracked Worldwide Shipping",
+    "price": 24.0,
+    "compareAtPrice": 38.0,
+    "badge": "Keeb Modding",
+    "rating": 4.9,
+    "reviewsCount": 34,
+    "description": "Solid CNC machined anodized matte black aluminum switch opener with magnetic clasp and 24-slot acrylic switch lubrication station. Opens MX and Kailh box switches in 1 click without bent switch pins.",
+    "features": [
+      "📦 CNC anodized aircraft aluminum switch opener with magnetic closure",
+      "📦 24-switch acrylic lubrication testing and staging station",
+      "📦 Dual-compatible with both Cherry MX style and Kailh Box switch latches",
+      "📦 Includes ergonomic switch stem holder and fine-tip nylon lube brushes"
+    ],
+    "specs": {
+      "Opener Material": "CNC Machined 6063 Anodized Aluminum",
+      "Station Material": "Precision Laser-Cut Polished Acrylic",
+      "Switch Compatibility": "Cherry MX, Gateron, Kailh Box, Outemu, Holy Panda",
+      "Capacity": "24 Disassembled Switches (Stems, Springs, Housings)"
+    },
+    "imageUrl": "/products/switch_opener_lube_deck.jpg",
+    "inStock": true,
+    "requiresShipping": true
+  },
+  {
+    "id": "prod-10187517165811",
+    "shopifyVariantId": "51565860749555",
+    "title": "Under-Desk No-Drill Steel Cable Management Spine Raceway",
+    "handle": "under-desk-no-drill-steel-cable-management-spine-raceway",
+    "category": "hardware",
+    "deliveryType": "physical",
+    "deliveryLabel": "📦 Physical Hardware • Free Tracked Worldwide Shipping",
+    "price": 34.0,
+    "compareAtPrice": 55.0,
+    "badge": "Zero Wire Clutter",
+    "rating": 5.0,
+    "reviewsCount": 52,
+    "description": "Heavy-duty cold-rolled steel raceway with padded anti-scratch desk edge clamps. Conceals 12-outlet surge protectors, high-wattage power bricks, and excess cable slack with zero drilling or desk damage.",
+    "features": [
+      "📦 Heavy-duty cold-rolled steel wire mesh with electrostatic powder coat",
+      "📦 Dual padded C-clamps support desks 10mm to 50mm thick with zero screws",
+      "📦 Massive 16-inch open-air design prevents heat buildup around power bricks",
+      "📦 Includes 10 reusable Velcro cable ties and silicone wire routing clips"
+    ],
+    "specs": {
+      "Dimensions": "400mm x 160mm x 140mm (16\" x 6.3\" x 5.5\")",
+      "Clamp Range": "10mm to 50mm (0.4\" to 2.0\" desktop thickness)",
+      "Load Capacity": "Up to 15kg (33 lbs) of bricks, surge bars, and wiring",
+      "Material": "Cold-Rolled Carbon Steel + Silicone Padding"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800&auto=format&fit=crop&q=80",
+    "inStock": true,
+    "requiresShipping": true
+  },
+  {
+    "id": "prod-10187517198579",
+    "shopifyVariantId": "51565860782323",
+    "title": "Sound-Reactive Dual RGB Ambient Smart Lightbar Towers",
+    "handle": "sound-reactive-dual-rgb-ambient-smart-lightbar-towers",
+    "category": "hardware",
+    "deliveryType": "physical",
+    "deliveryLabel": "📦 Physical Hardware • Free Tracked Worldwide Shipping",
+    "price": 39.0,
+    "compareAtPrice": 65.0,
+    "badge": "Ambient Soundstage",
+    "rating": 4.8,
+    "reviewsCount": 63,
+    "description": "Pair of vertical desk pillars with 32-bit ARM DSP acoustic sensor. Visualizes audio frequencies, git commit notifications, and IDE ambient backlighting with 16 million colors and fluid 60 FPS motion.",
+    "features": [
+      "📦 Dual sound-reactive vertical ambient lighting pillars (32 LEDs per tower)",
+      "📦 32-bit ARM DSP processor with high-sensitivity acoustic microphone pick-up",
+      "📦 18 dynamic color modes, 8 AGC rhythmic visualizer curves, and solid accents",
+      "📦 USB Type-C plug-and-play with wireless Bluetooth mobile app tuning"
+    ],
+    "specs": {
+      "Height": "240mm (9.5 inches) with weighted silicone anti-tip base",
+      "LED Count": "64 Individually Addressable RGB SMD LEDs (32 per bar)",
+      "Connectivity": "Bluetooth 5.2 Low Energy + 5V USB-C Power",
+      "Frequency Response": "100Hz – 16,000Hz Ultra-Low Latency DSP"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format&fit=crop&q=80",
+    "inStock": true,
+    "requiresShipping": true
+  },
+  {
+    "id": "prod-10187517231347",
+    "shopifyVariantId": "51565860815091",
+    "title": "Ergonomic Memory Foam Lumbar Support with Cooling Gel Layer",
+    "handle": "ergonomic-memory-foam-lumbar-support-with-cooling-gel-layer",
+    "category": "physical",
+    "deliveryType": "physical",
+    "deliveryLabel": "📦 Physical Hardware • Free Tracked Worldwide Shipping",
+    "price": 36.0,
+    "compareAtPrice": 60.0,
+    "badge": "Spine Relief",
+    "rating": 4.9,
+    "reviewsCount": 89,
+    "description": "Orthopedic high-density memory foam cushion with cooling hydro-gel channel designed for Aeron, Embody, and high-back task chairs. Prevents spinal compression during 10+ hour deep work sprints.",
+    "features": [
+      "📦 Orthopedic contoured slow-rebound memory foam core",
+      "📦 Embedded honeycomb cooling hydro-gel layer dissipates lower-back heat",
+      "📦 3D breathable mesh removable zipper cover (cold machine washable)",
+      "📦 Dual adjustable elastic buckle straps lock firmly to any task chair"
+    ],
+    "specs": {
+      "Dimensions": "440mm x 380mm x 120mm (17.3\" x 15\" x 4.7\")",
+      "Core Material": "High-Density CertiPUR-US Temperature Neutral Foam",
+      "Cooling Layer": "Polymer Hydro-Gel Honeycomb Grid",
+      "Compatibility": "Universal (Mesh chairs, gaming seats, leather executive chairs)"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1580481077198-c8478d1ea59a?w=800&auto=format&fit=crop&q=80",
+    "inStock": true,
+    "requiresShipping": true
+  },
+  {
+    "id": "prod-10187517264115",
+    "shopifyVariantId": "51565860847859",
+    "title": "Precision Screen & Optical Sensor Micro-Mist Cleaner Kit",
+    "handle": "precision-screen-optical-sensor-micro-mist-cleaner-kit",
+    "category": "physical",
+    "deliveryType": "physical",
+    "deliveryLabel": "📦 Physical Hardware • Free Tracked Worldwide Shipping",
+    "price": 16.0,
+    "compareAtPrice": 25.0,
+    "badge": "Streak-Free",
+    "rating": 4.8,
+    "reviewsCount": 42,
+    "description": "2-in-1 refillable anti-static screen cleaning spray wrapped in a micro-chamois wiping shell. Alcohol-free, ammonia-free, safe for matte anti-glare coatings, Apple Studio Displays, and camera lenses.",
+    "features": [
+      "📦 All-in-one spray bottle and wrapped microfiber wiping block",
+      "📦 Alcohol-free, ammonia-free, streak-free non-abrasive formula",
+      "📦 Safe for delicate nano-texture glass, OLED monitors, and smartphone screens",
+      "📦 Refillable cartridge design with translucent protective dust sleeve"
+    ],
+    "specs": {
+      "Capacity": "20ml Refillable Precision Atomizer (200+ Sprays)",
+      "Surface Material": "Washable Microfiber Flannel Body Shell",
+      "Formula": "Purified Deionized Water + Anti-Static Surfactant",
+      "Safety": "Zero Alcohol, Zero Ammonia, Non-Corrosive to Oleophobic Coatings"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&auto=format&fit=crop&q=80",
+    "inStock": true,
+    "requiresShipping": true
   }
 ];
