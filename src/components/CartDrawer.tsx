@@ -4,11 +4,13 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { X, Trash2, Plus, Minus, ShieldCheck, ArrowRight, Sparkles, ShoppingBag } from "lucide-react";
 import { useCart } from "@/context/CartContext";
+import { PRODUCTS } from "@/data/products";
 import { formatCurrency } from "@/lib/checkout";
 
 export default function CartDrawer() {
   const {
     cart,
+    addToCart,
     isCartOpen,
     setIsCartOpen,
     removeFromCart,
@@ -141,6 +143,35 @@ export default function CartDrawer() {
           {cart.length > 0 && (
             <div className="p-4 sm:p-6 border-t border-zinc-800 bg-zinc-900/90 space-y-4">
               
+              {/* 1-Click Order Bump */}
+              {!cart.some((l) => l.product.id === "prod-cheat-sheets") && (
+                <div className="p-2.5 rounded-lg bg-emerald-950/20 border border-emerald-500/30 flex items-center justify-between gap-2.5">
+                  <div className="flex items-center gap-2 min-w-0">
+                    <span className="w-7 h-7 rounded bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-xs flex-shrink-0">
+                      ⚡
+                    </span>
+                    <div className="min-w-0">
+                      <p className="text-[11px] font-mono font-bold text-white truncate">
+                        Linux & Docker Cheat Sheet
+                      </p>
+                      <p className="text-[10px] font-mono text-emerald-400">
+                        Add to order • +$12.00 (Instant PDF)
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const cheat = PRODUCTS.find((p) => p.id === "prod-cheat-sheets");
+                      if (cheat) addToCart(cheat);
+                    }}
+                    className="px-2.5 py-1 rounded bg-emerald-500 hover:bg-emerald-400 text-zinc-950 text-[10px] font-mono font-bold flex-shrink-0 cursor-pointer active:scale-95 transition-all"
+                  >
+                    + Add
+                  </button>
+                </div>
+              )}
+
               {/* Promo Code Input */}
               <form onSubmit={handleApplyPromo} className="flex gap-2">
                 <input

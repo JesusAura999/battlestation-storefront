@@ -14,6 +14,7 @@ import LiveActivityTicker from "@/components/LiveActivityTicker";
 import ProductModal from "@/components/ProductModal";
 import CartDrawer from "@/components/CartDrawer";
 import TerminalWidget from "@/components/TerminalWidget";
+import MobileQuickBuyBar from "@/components/MobileQuickBuyBar";
 import Footer from "@/components/Footer";
 import { Product } from "@/data/products";
 
@@ -42,7 +43,7 @@ export default function StorefrontClient() {
       <Navbar onOpenTerminal={() => setTerminalOpen(true)} />
 
       {/* Main Content Sections */}
-      <main className="flex-1">
+      <main className="flex-1 pb-20 sm:pb-0">
         {/* 1. Hero Section with Video Showcase */}
         <Hero />
 
@@ -64,6 +65,9 @@ export default function StorefrontClient() {
         {/* 7. Interactive Technical FAQ & Verified Engineer Reviews */}
         <FaqSection />
       </main>
+
+      {/* Sticky Mobile Quick-Buy Floating Bar */}
+      <MobileQuickBuyBar />
 
       {/* Interactive Product Quick View Modal */}
       <ProductModal

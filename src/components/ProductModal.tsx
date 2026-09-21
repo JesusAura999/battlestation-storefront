@@ -325,6 +325,36 @@ export default function ProductModal({
                   )}
                 </div>
 
+                {/* Delivery & Fulfillment Format Banner */}
+                <div className="mt-3.5 p-3 rounded-xl bg-zinc-900/90 border border-zinc-800 flex items-start gap-3 shadow-inner">
+                  <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 flex-shrink-0 mt-0.5">
+                    {product.deliveryType === "physical" ? (
+                      <Truck className="w-4 h-4" />
+                    ) : product.deliveryType === "hybrid" ? (
+                      <Layers className="w-4 h-4" />
+                    ) : (
+                      <Zap className="w-4 h-4" />
+                    )}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="text-xs font-mono font-bold text-white flex flex-wrap items-center gap-1.5">
+                      <span>
+                        {product.deliveryType === "hybrid"
+                          ? "Hybrid Hardware + Digital Assets"
+                          : product.deliveryType === "physical"
+                          ? "Physical Hardware Only"
+                          : "100% Digital Software"}
+                      </span>
+                      <span className="px-1.5 py-0.2 rounded text-[10px] font-mono bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                        {product.requiresShipping ? "FREE TRACKED SHIPPING" : "ZERO SHIPPING • INSTANT"}
+                      </span>
+                    </div>
+                    <p className="text-[11px] font-mono text-zinc-400 mt-1 leading-normal">
+                      {product.deliveryLabel}
+                    </p>
+                  </div>
+                </div>
+
                 {/* Description */}
                 <p className="mt-4 text-xs sm:text-sm text-zinc-300 font-sans leading-relaxed">
                   {product.description}

@@ -98,8 +98,17 @@ export default function ProductGrid({ onSelectProduct }: ProductGridProps) {
                       {product.badge}
                     </div>
                   )}
-                  <div className="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-black/70 backdrop-blur-md text-[10px] font-mono text-zinc-300">
-                    {product.requiresShipping ? "📦 Tracked Shipping" : "⚡ Instant Download"}
+                  <div className="absolute bottom-3 left-3 right-3 px-2.5 py-1 rounded-md bg-zinc-950/90 border border-zinc-800/90 backdrop-blur-md text-[10px] font-mono flex items-center justify-between shadow-lg">
+                    <span className="font-bold text-emerald-400">
+                      {product.deliveryType === "hybrid"
+                        ? "📦 PHYSICAL + ⚡ DIGITAL"
+                        : product.deliveryType === "physical"
+                        ? "📦 PHYSICAL HARDWARE"
+                        : "⚡ 100% DIGITAL ASSET"}
+                    </span>
+                    <span className="text-zinc-400">
+                      {product.requiresShipping ? "Tracked Delivery" : "Instant Access"}
+                    </span>
                   </div>
 
                   {/* Hover Overlay Quick View button */}
