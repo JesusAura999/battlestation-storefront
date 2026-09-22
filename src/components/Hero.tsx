@@ -65,30 +65,32 @@ export default function Hero() {
             <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
               <button
                 onClick={() => {
-                  if (bundleProduct) {
-                    addToCart(bundleProduct, 1);
-                  }
+                  window.location.href = "https://kjsy4w-34.myshopify.com/cart/50825409954035:1?discount=FOUNDER50";
                 }}
-                className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-mono font-bold text-sm tracking-wide transition-all shadow-xl shadow-emerald-500/25 hover:shadow-emerald-400/40 cursor-pointer"
+                className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 font-mono font-bold text-sm tracking-wide transition-all shadow-xl shadow-amber-500/25 hover:shadow-amber-400/40 cursor-pointer"
+                title="Claim the $29 Topographic Mat + Free $41 Digital Vault with code FOUNDER50"
               >
-                <Zap className="w-4 h-4" />
-                <span>CLAIM STARTER BUNDLE ($59)</span>
+                <Zap className="w-4 h-4 fill-zinc-950" />
+                <span>CLAIM FOUNDER KIT ($29)</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
               <button
-                onClick={() => setVideoModalOpen(true)}
+                onClick={() => {
+                  if (bundleProduct) {
+                    addToCart(bundleProduct, 1);
+                  }
+                }}
                 className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-lg bg-zinc-900/90 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 font-mono text-sm transition-colors cursor-pointer"
               >
-                <Play className="w-4 h-4 text-emerald-400 fill-emerald-400" />
-                <span>Watch 4K Showcase</span>
+                <span>Full Cockpit Suite ($59)</span>
               </button>
             </div>
 
             {/* Promo Code Reminder */}
             <div className="mt-4 flex items-center gap-2 text-xs font-mono text-zinc-400">
               <Terminal className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Use discount code <strong className="text-emerald-400 underline decoration-dashed">SETUPWARS10</strong> at checkout for 10% off</span>
+              <span>Batch 001: <strong className="text-emerald-400">18/50 spots left</strong> • Use code <strong className="text-emerald-400 underline decoration-dashed">FOUNDER50</strong> for Free $41 Developer Vault</span>
             </div>
           </div>
 

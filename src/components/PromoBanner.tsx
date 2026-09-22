@@ -22,29 +22,29 @@ export default function PromoBanner() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
           <span className="font-mono text-emerald-400 font-semibold tracking-wide uppercase">
-            [SYS_ALERT]
+            [BATCH_001_ALERT]
           </span>
           <span className="text-zinc-200">
-            Developer Cockpit V2 Dropped • Free tracked worldwide shipping on bundles
+            Founder Drop Live: 18/50 Workstations Left • $29 Topo Mat + Free $41 Digital Vault
           </span>
         </div>
 
         <div className="flex items-center gap-3">
-          <span className="text-zinc-400 hidden sm:inline">Use code:</span>
+          <span className="text-zinc-400 hidden sm:inline">Founder code:</span>
           <button
             onClick={copyCode}
             className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-900 border border-emerald-500/40 text-emerald-400 font-mono font-bold hover:bg-emerald-950/50 hover:border-emerald-400 transition-all cursor-pointer group"
             title="Click to copy promo code"
           >
             <Terminal className="w-3.5 h-3.5 text-emerald-400" />
-            <span>{DEFAULT_DISCOUNT_CODE}</span>
+            <span>FOUNDER50</span>
             {copied ? (
               <Check className="w-3 h-3 text-emerald-300" />
             ) : (
               <Copy className="w-3 h-3 opacity-60 group-hover:opacity-100" />
             )}
           </button>
-          <span className="text-emerald-400/90 font-medium">Save 10%</span>
+          <span className="text-emerald-400/90 font-medium">Free $41 Vault</span>
         </div>
       </div>
     </div>

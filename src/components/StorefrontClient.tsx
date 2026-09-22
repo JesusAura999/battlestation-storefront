@@ -10,6 +10,7 @@ import BundleConfigurator from "@/components/BundleConfigurator";
 import ProductGrid from "@/components/ProductGrid";
 import CommunitySetups from "@/components/CommunitySetups";
 import CustomerTestimonials from "@/components/CustomerTestimonials";
+import RiskReversalGuarantee from "@/components/RiskReversalGuarantee";
 import FaqSection from "@/components/FaqSection";
 import LiveActivityTicker from "@/components/LiveActivityTicker";
 import ProductModal from "@/components/ProductModal";
@@ -69,6 +70,9 @@ export default function StorefrontClient() {
 
         {/* 8. Interactive Technical FAQ & Verified Engineer Reviews */}
         <FaqSection />
+
+        {/* 9. Ironclad 30-Day Spill & Glide Risk Reversal Guarantee */}
+        <RiskReversalGuarantee />
       </main>
 
       {/* Sticky Mobile Quick-Buy Floating Bar */}
