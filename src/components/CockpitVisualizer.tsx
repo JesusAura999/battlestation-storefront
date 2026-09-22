@@ -28,7 +28,7 @@ const CONFIGS: SetupConfig[] = [
     accentColor: "text-emerald-400",
     borderColor: "border-emerald-500",
     matName: "Topographical Minimalist Precision Desk Mat",
-    matPrice: 34.99,
+    matPrice: 29.0,
     matShopifyVariantId: "50825409954035",
     wallpaperName: "4K Dark Topo OLED (3840x2160)",
     image: "/products/topographic_desk_mat_1789949088023.jpg",

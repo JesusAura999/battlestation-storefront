@@ -2,13 +2,16 @@
 
 import React, { useState } from "react";
 import { Sparkles, Copy, Check, Terminal } from "lucide-react";
-import { DEFAULT_DISCOUNT_CODE } from "@/lib/checkout";
+
+const FOUNDER_DISCOUNT_CODE = "FOUNDER50";
+const FOUNDER_KIT_CHECKOUT_URL =
+  "https://kjsy4w-34.myshopify.com/cart/50825409954035:1?discount=FOUNDER50";
 
 export default function PromoBanner() {
   const [copied, setCopied] = useState(false);
 
   const copyCode = () => {
-    navigator.clipboard.writeText(DEFAULT_DISCOUNT_CODE);
+    navigator.clipboard.writeText(FOUNDER_DISCOUNT_CODE);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -34,16 +37,23 @@ export default function PromoBanner() {
           <button
             onClick={copyCode}
             className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-900 border border-emerald-500/40 text-emerald-400 font-mono font-bold hover:bg-emerald-950/50 hover:border-emerald-400 transition-all cursor-pointer group"
-            title="Click to copy promo code"
+            title="Click to copy the FOUNDER50 promo code"
           >
             <Terminal className="w-3.5 h-3.5 text-emerald-400" />
-            <span>FOUNDER50</span>
+            <span>{FOUNDER_DISCOUNT_CODE}</span>
             {copied ? (
               <Check className="w-3 h-3 text-emerald-300" />
             ) : (
               <Copy className="w-3 h-3 opacity-60 group-hover:opacity-100" />
             )}
           </button>
+          <a
+            href={FOUNDER_KIT_CHECKOUT_URL}
+            className="flex items-center gap-1 px-2.5 py-1 rounded bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-mono font-bold transition-colors"
+            title="Claim the $29 Topo Mat + Free $41 Digital Vault with code FOUNDER50"
+          >
+            <span>CLAIM $29 KIT</span>
+          </a>
           <span className="text-emerald-400/90 font-medium">Free $41 Vault</span>
         </div>
       </div>

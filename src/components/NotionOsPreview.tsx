@@ -27,7 +27,9 @@ export default function NotionOsPreview() {
   const [tasks, setTasks] = useState<TaskItem[]>(INITIAL_TASKS);
   const [copiedPrompt, setCopiedPrompt] = useState(false);
 
-  const notionProduct = PRODUCTS.find((p) => p.id === "prod-notion-os") || PRODUCTS[2];
+  const notionProduct = PRODUCTS.find(
+    (p) => p.shopifyVariantId === "50825384952051"
+  )!;
 
   const toggleTask = (id: string) => {
     setTasks((prev) =>

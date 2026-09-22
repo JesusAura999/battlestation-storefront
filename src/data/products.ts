@@ -328,7 +328,7 @@ export const PRODUCTS: Product[] = [
     "category": "physical",
     "deliveryType": "physical",
     "deliveryLabel": "📦 Physical Hardware • Free Tracked Worldwide Shipping",
-    "price": 34.99,
+    "price": 29.0,
     "compareAtPrice": 45.0,
     "badge": "Best Seller",
     "rating": 4.9,

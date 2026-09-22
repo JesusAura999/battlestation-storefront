@@ -12,7 +12,8 @@ export default function BundleConfigurator() {
   const [promoInput, setPromoInput] = useState("SETUPWARS10");
   const [promoApplied, setPromoApplied] = useState(true);
 
-  const bundleProduct = PRODUCTS.find((p) => p.id === "prod-bundle-cockpit") || PRODUCTS[0];
+  const bundleProduct =
+    PRODUCTS.find((p) => p.shopifyVariantId === "50839092494579") ?? PRODUCTS[0];
 
   const bundleItems = [
     { title: "Extended 900x400mm Waterproof Desk Mat", retail: "$36.00", icon: "🖥️", desc: "Topographic or Synthwave micro-weave surface" },

@@ -10,7 +10,9 @@ export default function Hero() {
   const { addToCart } = useCart();
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
-  const bundleProduct = PRODUCTS.find((p) => p.id === "prod-bundle-cockpit");
+  const bundleProduct = PRODUCTS.find(
+    (p) => p.shopifyVariantId === "50839092494579"
+  );
 
   return (
     <section className="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 border-b border-zinc-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,185,129,0.12),rgba(255,255,255,0))]">
